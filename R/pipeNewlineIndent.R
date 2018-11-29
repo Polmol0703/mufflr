@@ -4,6 +4,6 @@
 #' @export
 #'
 pipeNewlineIndent <- function(){
-rstudioapi::insertText(" %>% dplyr:: ")
+rstudioapi::insertText(" %>% dplyr::")
 }
 
