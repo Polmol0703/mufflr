@@ -2,3 +2,5 @@
 
 export(assignNewlineIndent)
 export(pipeNewlineIndent)
+export(pipeNewlineIndentDplyr)
+

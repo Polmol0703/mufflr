@@ -1,4 +1,4 @@
-Package: mufflr
+Package: rstudioaddins
 Title: Mufflr: Addins for speedy and smooth pipe chains.
 Version: 0.0.0.9000
 Authors@R: person("Miles", "McBain", email = "miles.mcbaint@gmail.com", role = c("aut", "cre"))
