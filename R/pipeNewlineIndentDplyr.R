@@ -3,7 +3,7 @@
 #' @return NULL
 #' @export
 #'
-pipeNewlineIndent <- function(){
+pipeNewlineIndentDplyr <- function(){
   SPACE_PREF <- .rs.readUiPref('num_spaces_for_tab')
 
   context <- rstudioapi::getActiveDocumentContext()
