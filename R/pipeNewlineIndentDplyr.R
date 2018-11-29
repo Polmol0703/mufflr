@@ -23,7 +23,7 @@ pipeNewlineIndentDplyr <- function(){
     }
     else{
       #Insert a space
-      rstudioapi::insertText(paste0(" %>%\ndplyr::", strrep(" ",indent_context)))
+      rstudioapi::insertText(paste0(" %>%\ndplyr::"))
     }
   }
 }
