@@ -15,15 +15,15 @@ pipeNewlineIndent <- function(){
   if(sum(context$selection[[1]]$range$end -
          context$selection[[1]]$range$start) > 0){
     #Non-empy selection. Just insert the pipe and newline.
-    rstudioapi::insertText(paste0("%>%\n", strrep(" ",indent_context)))
+    rstudioapi::insertText(paste0("%>% dplyr::", strrep(" ",indent_context)))
   }else{
     if(grepl(pattern = '\\s$', context$contents[context_row])){
       #Empty selection. If the last char of the line is a space do not insert one.
-      rstudioapi::insertText(paste0("%>%\n", strrep(" ",indent_context)))
+      rstudioapi::insertText(paste0("%>%\ dplyr::", strrep(" ",indent_context)))
     }
     else{
       #Insert a space
-      rstudioapi::insertText(paste0(" %>% dplyr::", strrep(" ",indent_context)))
+      rstudioapi::insertText(paste0("%>% dplyr::", strrep(" ",indent_context)))
     }
   }
 }
